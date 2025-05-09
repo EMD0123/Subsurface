@@ -2,12 +2,24 @@
   "feature": "subsurface:quartz_canyons/quartz_crystal_stem",
   "placement": [
     {
-      "type": "minecraft:carving_mask",
-      "step": "air"
+      "type": "minecraft:count",
+      "count": 256
     },
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 20
+      "type": "minecraft:count",
+      "count": 3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:cave_air"
+        ]
+      }
     }
   ]
 }
