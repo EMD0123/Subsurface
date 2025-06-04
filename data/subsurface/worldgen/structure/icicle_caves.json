@@ -6,7 +6,7 @@
   "start_pool": "subsurface:icicle_caves",
   "size": 6,
   "start_height": {
-    "below_top": 0
+    "below_top": 3
   },
   "max_distance_from_center": 80,
   "use_expansion_hack": false

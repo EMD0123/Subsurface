@@ -27,17 +27,13 @@
                 "type": "minecraft:random_offset",
                 "xz_spread": {
                   "type": "minecraft:uniform",
-                  
-                    "min_inclusive": -8,
-                    "max_inclusive": 8
-                  
+                  "min_inclusive": -8,
+                  "max_inclusive": 8
                 },
                 "y_spread": {
                   "type": "minecraft:uniform",
-                  
-                    "min_inclusive": -8,
-                    "max_inclusive": 8
-                  
+                  "min_inclusive": -8,
+                  "max_inclusive": 8
                 }
               }
             ]
@@ -52,12 +48,24 @@
   },
   "placement": [
     {
-      "type": "minecraft:carving_mask",
-      "step": "air"
+      "type": "minecraft:count",
+      "count": 256
     },
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 5
+      "type": "minecraft:count",
+      "count": 15
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:cave_air"
+        ]
+      }
     }
   ]
 }
