@@ -6,5 +6,16 @@
       75
     ],
     "description": "By \u00A7aEMD§r\nUpdated by §6Antoha256M"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": [
+          69,
+          10000
+        ],
+        "directory": "overlay_1.21.5"
+      }
+    ]
   }
 }
